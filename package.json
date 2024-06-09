@@ -1,5 +1,5 @@
 {
-  "name": "mk-app",
+  "name": "@sharmaz/mk-app",
   "version": "0.1.0",
   "type": "module",
   "description": "A quick way to start your web applications.",
@@ -11,10 +11,15 @@
     "type": "git",
     "url": "https://github.com/Sharmaz/mk-app.git"
   },
-  "keywords": ["react", "cli", "web", "app"],
+  "keywords": [
+    "react",
+    "cli",
+    "web",
+    "app"
+  ],
   "bin": {
-    "mk-app": "index.js",
-    "ctpl": "index.js"
+    "@sharmaz/mk-app": "index.js",
+    "mk-app": "index.js"
   },
   "preferGlobal": true,
   "engines": {

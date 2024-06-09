@@ -2,8 +2,15 @@
 A quick way to start your web applications.
 
 ## Install
-`npm install -g mk-app`
+```
+npm install -g @sharmaz/mk-app
+```
+
 ## Usage
-`mk-app`
+```
+@sharmaz/mk-app
+```
 or
-`npx mk-app`
+```
+npx @sharmaz/mk-app
+```
