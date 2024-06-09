@@ -2,15 +2,21 @@
   "name": "mk-app",
   "version": "0.1.0",
   "type": "module",
-  "description": "",
+  "description": "A quick way to start your web applications.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sharmaz/mk-app.git"
+  },
+  "keywords": ["react", "cli", "web", "app"],
   "bin": {
     "mk-app": "index.js",
     "ctpl": "index.js"
   },
+  "preferGlobal": true,
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
   },
@@ -18,8 +24,12 @@
     "index.js",
     "templates/*"
   ],
-  "author": "Ivan Robles",
+  "author": "Ivan Robles <contact@ivanrobles.pro>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sharmaz/mk-app/issues"
+  },
+  "homepage": "https://github.com/Sharmaz/mk-app#readme",
   "devDependencies": {
     "prompts": "^2.4.2"
   }
