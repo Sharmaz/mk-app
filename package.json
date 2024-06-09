@@ -1,0 +1,26 @@
+{
+  "name": "mk-app",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mk-app": "index.js",
+    "ctpl": "index.js"
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "files": [
+    "index.js",
+    "templates/*"
+  ],
+  "author": "Ivan Robles",
+  "license": "MIT",
+  "devDependencies": {
+    "prompts": "^2.4.2"
+  }
+}
