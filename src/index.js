@@ -1,10 +1,3 @@
-const templates = [
-  {
-    value: "minimal-react",
-    title: "minimal react app",
-    description: "This is the minimal React App Set Up.",
-  },
-];
 
 import prompts from "prompts";
 import { fileURLToPath } from "node:url";
@@ -18,6 +11,14 @@ import {
   copyFile,
   readFile,
 } from "fs/promises";
+
+const templates = [
+  {
+    value: "minimal-react",
+    title: "minimal react app",
+    description: "This is the minimal React App Set Up.",
+  },
+];
 
 (async () => {
   try{
