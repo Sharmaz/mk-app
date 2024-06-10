@@ -1,6 +1,7 @@
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import obfuscator from 'rollup-plugin-obfuscator';
+import esbuild from 'rollup-plugin-esbuild'
+
 export default {
   input: 'src/index.js',
   output: {
@@ -10,8 +11,9 @@ export default {
   plugins: [
     nodeResolve(),
     commonjs(),
-    obfuscator({
-      global: true
+    esbuild({
+      target: 'node18',
+      minify: true
     })
   ]
 };
