@@ -5,9 +5,11 @@
   "description": "A quick way to start your web applications.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "cov:clean": "rimraf .nyc_output && rimraf coverage",
+    "cov:unit": "jest --forceExit --colors -c jest.config.js",
+    "test": "npm-run-all cov:clean cov:unit"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,7 @@
   },
   "homepage": "https://github.com/Sharmaz/mk-app#readme",
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "eslint": "^8.57.0",
@@ -46,6 +49,8 @@
     "eslint-plugin-react": "^7.34.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "jest": "^29.7.0",
+    "npm-run-all": "^4.1.5",
     "rollup": "^4.18.0",
     "rollup-plugin-esbuild": "^6.1.1"
   },
