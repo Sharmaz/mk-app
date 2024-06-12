@@ -8,7 +8,7 @@ npm install -g @sharmaz/mk-app
 
 ## Usage
 ```
-@sharmaz/mk-app
+mk-app
 ```
 or
 ```

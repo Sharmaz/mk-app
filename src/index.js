@@ -35,17 +35,14 @@ const templates = [
         message: "Enter your app name",
         initial: "my-app",
         format: (val) => val.toLowerCase().split(" ").join("-"),
-        validate: (val) => {
-          console.log('val', val)
-          return val.match(/[a-z]{0,}-[a-z]{0,}/g)
+        validate: (val) => val.match(/[a-z]{0,}-[a-z]{0,}/g)
           ? true
           : "App name should not contain special characters except hyphen (-)"
-        }
       },
     ]);
 
     const { appName, template } = response;
-    const targetDir = path.join(process.cwd(), appName);
+    const targetDirectory = path.join(process.cwd(), appName);
     const sourceDir = path.resolve(
       fileURLToPath(import.meta.url),
       "../../templates",
@@ -70,12 +67,12 @@ const templates = [
       }
     };
 
-    const renamePackageJsonName = async (targetDir, appName) => {
+    const renamePackageJsonName = async (targetDir, nameApp) => {
       const packageJsonPath = path.join(targetDir, "package.json");
       try {
         const packageJsonData = await readFile(packageJsonPath, "utf8");
         const packageJson = JSON.parse(packageJsonData);
-        packageJson.name = appName;
+        packageJson.name = nameApp;
         await writeFile(
           packageJsonPath,
           JSON.stringify(packageJson, null, 2),
@@ -86,13 +83,13 @@ const templates = [
       }
     };
 
-    if (!fs.existsSync(targetDir)) {
+    if (!fs.existsSync(targetDirectory)) {
       console.log("Target directory doesn't exist");
       console.log("Creating directory...");
-      fs.mkdirSync(targetDir, { recursive: true });
+      fs.mkdirSync(targetDirectory, { recursive: true });
       console.log("Finished creating directory");
-      await copyFilesAndDirectories(sourceDir, targetDir);
-      await renamePackageJsonName(targetDir, appName);
+      await copyFilesAndDirectories(sourceDir, targetDirectory);
+      await renamePackageJsonName(targetDirectory, appName);
       console.log(`Finished generating your app ${appName}`);
       console.log(`cd ${appName}`);
       console.log(`npm install`);
