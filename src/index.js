@@ -16,7 +16,12 @@ const templates = [
   {
     value: "minimal-react",
     title: "minimal react app",
-    description: "This is the minimal React App Set Up.",
+    description: "Minimal React App Set Up.",
+  },
+  {
+    value: "vanilla-js",
+    title: "vanilla js app",
+    description: "Vanilla JS App Set Up.",
   },
 ];
 
