@@ -3,7 +3,7 @@
     "node": true,
     "jest": true
   },
-  "ignorePatterns": ["**/dist/*"],
+  "ignorePatterns": ["**/dist/*", "**/templates/*"],
   "extends": ["airbnb-base", "prettier"],
   "overrides": [
   ],

@@ -40,7 +40,7 @@ const templates = [
         message: "Enter your app name",
         initial: "my-app",
         format: (val) => val.toLowerCase().split(" ").join("-"),
-        validate: (val) => val.match(/[a-z]{0,}-[a-z]{0,}/g)
+        validate: (val) => val.match(/[a-z]{0,}-?[a-z]{0,}/g)
           ? true
           : "App name should not contain special characters except hyphen (-)"
       },
