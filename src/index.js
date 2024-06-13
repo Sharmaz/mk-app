@@ -16,7 +16,12 @@ const templates = [
   {
     value: "minimal-react",
     title: "minimal react app",
-    description: "This is the minimal React App Set Up.",
+    description: "Minimal React App Set Up.",
+  },
+  {
+    value: "vanilla-js",
+    title: "vanilla js app",
+    description: "Vanilla JS App Set Up.",
   },
 ];
 
@@ -35,7 +40,7 @@ const templates = [
         message: "Enter your app name",
         initial: "my-app",
         format: (val) => val.toLowerCase().split(" ").join("-"),
-        validate: (val) => val.match(/[a-z]{0,}-[a-z]{0,}/g)
+        validate: (val) => val.match(/[a-z]{0,}-?[a-z]{0,}/g)
           ? true
           : "App name should not contain special characters except hyphen (-)"
       },
