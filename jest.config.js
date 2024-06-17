@@ -2,7 +2,7 @@ export default {
   testEnvironment: 'node',
   collectCoverage: true,
   coverageDirectory: 'coverage',
-  testMatch: ['**/*.unit.test.{js,ts}'],
+  testMatch: ['**/*.test.{js,ts}'],
   transformIgnorePatterns: [
     '[/\\\\\\\\]node_modules[/\\\\\\\\].+\\\\.(js|ts)$'
   ],
