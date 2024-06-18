@@ -2,11 +2,9 @@
 import prompts from "prompts";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import fs from "fs";
 
 import templates from "./templateList";
-import copyFilesAndDirectories from "./templateCopy";
-import renamePackageJsonName from "./templateRenameName";
+import initialize from "./initialize";
 
 (async () => {
   try {
@@ -37,19 +35,7 @@ import renamePackageJsonName from "./templateRenameName";
       `${template}`
     );
 
-    if (!fs.existsSync(targetDirectory)) {
-      console.log("Target directory doesn't exist");
-      console.log("Creating directory...");
-      fs.mkdirSync(targetDirectory, { recursive: true });
-      console.log("Finished creating directory");
-      copyFilesAndDirectories(sourceDir, targetDirectory);
-      renamePackageJsonName(targetDirectory, appName);
-      console.log(`Finished generating your app ${appName}`);
-      console.log(`cd ${appName}`);
-      console.log(`npm install`);
-    } else {
-      throw new Error("Target directory already exist!");
-    }
+    initialize(sourceDir, targetDirectory, appName);
   }
   catch(err) {
     console.log(err.message);
