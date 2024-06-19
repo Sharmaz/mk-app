@@ -5,6 +5,7 @@ import path from "node:path";
 
 import templates from "./templateList";
 import initialize from "./initialize";
+import { formatAppName, validateAppName } from "./utils/appName";
 
 (async () => {
   try {
@@ -20,10 +21,8 @@ import initialize from "./initialize";
         name: "appName",
         message: "Enter your app name",
         initial: "my-app",
-        format: (val) => val.toLowerCase().split(" ").join("-"),
-        validate: (val) => val.match(/[a-z]{0,}-?[a-z]{0,}/g)
-          ? true
-          : "App name should not contain special characters except hyphen (-)"
+        format: (val) => formatAppName(val),
+        validate: (val) => validateAppName(val),
       },
     ]);
 
