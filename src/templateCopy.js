@@ -11,7 +11,11 @@ const copyFilesAndDirectories = (source, destination) => {
 
   entries.forEach((entry) => {
     const sourcePath = path.join(source, entry);
-    const destPath = path.join(destination, entry);
+    let destPath = path.join(destination, entry);
+
+    if (entry === '_gitignore') {
+      destPath = path.join(destination, '.gitignore');
+    }
 
     const stat = lstatSync(sourcePath);
 

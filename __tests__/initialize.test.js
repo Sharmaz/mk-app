@@ -7,11 +7,10 @@ import templates from "../src/templateList";
 import copyFilesAndDirectories from "../src/templateCopy";
 import initialize from "../src/initialize";
 
-
 const dirname = url.fileURLToPath(new URL('.', import.meta.url));
 const mainPath = join(dirname, '..');
 const appNameMock = 'vanilla-test-app';
-const sourcePath = join(dirname, `../templates/${templates[1].value}`);
+const sourcePath = join(dirname, `../templates/${templates[0].value}`);
 const destinationPath = join(mainPath, appNameMock);
 
 afterEach(() => rmSync(destinationPath, { recursive: true, force: true }));
