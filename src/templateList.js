@@ -1,14 +1,19 @@
 const templates = [
   {
-    value: "minimal-react",
-    title: "minimal react app",
-    description: "Minimal React App Set Up.",
+    value: 'vanilla-js',
+    title: 'Vanilla JS',
+    description: 'Vanilla JS + Vite.',
   },
   {
-    value: "vanilla-js",
-    title: "vanilla js app",
-    description: "Vanilla JS App Set Up.",
+    value: 'minimal-react',
+    title: 'Minimal React',
+    description: 'React + Vite.',
   },
+  {
+    value: 'react-tw',
+    title:  'React Tailwind CSS',
+    description: 'React + Vite + Tailwindcss.'
+  }
 ];
 
 export default templates;
