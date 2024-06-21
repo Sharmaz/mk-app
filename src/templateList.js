@@ -13,6 +13,11 @@ const templates = [
     value: 'react-tw',
     title:  'React Tailwind CSS',
     description: 'React + Vite + Tailwindcss.'
+  },
+  {
+    value: 'react-ts',
+    title:  'React TypeScript',
+    description: 'React + Vite + TypeScript + ESlint 8.'
   }
 ];
 
