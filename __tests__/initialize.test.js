@@ -28,6 +28,6 @@ describe('Initialize app', () => {
     initialize(sourcePath, destinationPath, appNameMock);
   
     const packageJson = readFileSync(`${destinationPath}/package.json`, 'utf8');
-    expect(packageJson).toContain('vanilla-app');
+    expect(packageJson).toContain('vanilla-js');
   });
 });

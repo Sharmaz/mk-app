@@ -1,6 +1,6 @@
 {
   "name": "@sharmaz/mk-app",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "type": "module",
   "description": "A quick way to start your web applications.",
   "main": "index.js",
@@ -19,7 +19,12 @@
     "react",
     "cli",
     "web",
-    "app"
+    "app",
+    "javascript",
+    "vanilla",
+    "vite",
+    "tailwindcss",
+    "typescript"
   ],
   "bin": {
     "mk-app": "index.js"
