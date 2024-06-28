@@ -1,6 +1,6 @@
 {
   "name": "@sharmaz/mk-app",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "type": "module",
   "description": "A quick way to start your web applications.",
   "main": "index.js",
@@ -65,6 +65,7 @@
     "rollup-plugin-esbuild": "^6.1.1"
   },
   "dependencies": {
+    "minimist": "^1.2.8",
     "prompts": "^2.4.2"
   }
 }
