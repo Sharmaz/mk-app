@@ -1,10 +1,10 @@
-import path from "node:path";
+import path from 'node:path';
 import {
   copyFileSync,
   lstatSync,
   mkdirSync,
   readdirSync
-} from "node:fs";
+} from 'node:fs';
 
 const copyFilesAndDirectories = (source, destination) => {
   const entries = readdirSync(source);
