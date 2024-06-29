@@ -1,28 +1,30 @@
+import colors from './utils/colors';
+
 const templates = [
   {
     value: 'vanilla-js',
-    title: 'Vanilla JS',
-    description: 'Vanilla JS + Vite.',
+    title: colors.vanilla('Vanilla JS'),
+    description: colors.error('Vanilla JS + Vite.'),
   },
   {
     value: 'minimal-react',
-    title: 'Minimal React',
-    description: 'React + Vite.',
+    title: colors.react('Minimal React'),
+    description: colors.error('React + Vite.'),
   },
   {
     value: 'react-tw',
-    title:  'React Tailwind CSS',
-    description: 'React + Vite + Tailwindcss.'
+    title:  colors.react('React Tailwind CSS'),
+    description: colors.error('React + Vite + Tailwindcss.'),
   },
   {
     value: 'react-tw-lint-test',
-    title:  'React Tailwind CSS, Linter and Testing',
-    description: 'React + Vite + Tailwind CSS + ESlint 8 + ESlint Airbnb + Jest + React Testing Library'
+    title:  colors.react('React Tailwind CSS, Linter and Testing'),
+    description: colors.error('React + Vite + Tailwind CSS + ESlint 8 + ESlint Airbnb + Jest + React Testing Library'),
   },
   {
     value: 'react-ts',
-    title:  'React TypeScript',
-    description: 'React + Vite + TypeScript + ESlint 8.'
+    title:  colors.typescript('React TypeScript'),
+    description: colors.error('React + Vite + TypeScript + ESlint 8.'),
   }
 ];
 

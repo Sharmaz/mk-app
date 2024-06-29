@@ -1,14 +1,15 @@
 
-import prompts from "prompts";
-import { fileURLToPath } from "node:url";
-import path from "node:path";
+import prompts from 'prompts';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
 import { argv } from 'node:process';
 import minimist from 'minimist';
 
-import templates from "./templateList";
-import initialize from "./initialize";
-import { formatAppName, validateAppName } from "./utils/appName";
-import helpMessage from "./utils/helpMessage";
+import templates from './templateList';
+import colors from './utils/colors';
+import initialize from './initialize';
+import { formatAppName, validateAppName } from './utils/appName';
+import helpMessage from './utils/helpMessage';
 
 const argsv = minimist(argv.slice(2));
 
@@ -26,16 +27,17 @@ const app = async (args) => {
     try {
       const response = await prompts([
         {
-          type: "select",
-          name: "template",
-          message: "Select your setup",
+          type: 'select',
+          name: 'template',
+          message: colors.typescript('Select your setup'),
+          hint: colors.warn('Use arrow-keys. Return to submit.'),
           choices: templates,
         },
         {
-          type: "text",
-          name: "appName",
-          message: "Enter your app name",
-          initial: "my-app",
+          type: 'text',
+          name: 'appName',
+          message: colors.typescript('Enter your app name'),
+          initial: colors.react('my-app'),
           format: (val) => formatAppName(val),
           validate: (val) => validateAppName(val),
         },
@@ -45,14 +47,14 @@ const app = async (args) => {
       const targetDirectory = path.join(process.cwd(), appName);
       const sourceDir = path.resolve(
         fileURLToPath(import.meta.url),
-        "../../templates",
+        '../../templates',
         `${template}`
       );
 
       initialize(sourceDir, targetDirectory, appName);
     }
     catch(err) {
-      console.log(err.message);
+      console.error(colors.error(err.message));
     }
   } else {
     try {
@@ -61,14 +63,14 @@ const app = async (args) => {
       const targetDirectory = path.join(process.cwd(), appName);
       const sourceDir = path.resolve(
         fileURLToPath(import.meta.url),
-        "../../templates",
+        '../../templates',
         `${template}`
       );
 
       initialize(sourceDir, targetDirectory, appName);
     }
     catch(err) {
-      console.log(err.message);
+      console.error(colors.error(err.message));
     }
   }
   return 0;

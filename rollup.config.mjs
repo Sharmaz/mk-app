@@ -9,7 +9,9 @@ export default {
     minifyInternalExports: true,
   },
   plugins: [
-    nodeResolve(),
+    nodeResolve({
+      exportConditions: ['node'],
+    }),
     commonjs(),
     esbuild({
       target: 'node18',
