@@ -25,6 +25,11 @@ const templates = [
     value: 'react-ts',
     title:  colors.typescript('React TypeScript'),
     description: colors.error('React + Vite + TypeScript + ESlint 8.'),
+  },
+  {
+    value: 'react-next',
+    title:  colors.error('React Experimental'),
+    description: colors.error('React 19 + Vite + Oxlint.'),
   }
 ];
 
