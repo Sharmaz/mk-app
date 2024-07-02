@@ -37,7 +37,7 @@ const app = async (args) => {
           type: 'text',
           name: 'appName',
           message: colors.typescript('Enter your app name'),
-          initial: colors.react('my-app'),
+          initial: 'my-app',
           format: (val) => formatAppName(val),
           validate: (val) => validateAppName(val),
         },
