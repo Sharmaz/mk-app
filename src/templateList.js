@@ -12,6 +12,11 @@ const templates = [
     description: colors.error('React + Vite.'),
   },
   {
+    value: 'minimal-react-wp',
+    title: colors.react('Minimal React Webpack'),
+    description: colors.error('React + Webpack')
+  },
+  {
     value: 'react-tw',
     title:  colors.react('React Tailwind CSS'),
     description: colors.error('React + Vite + Tailwindcss.'),
