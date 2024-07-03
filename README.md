@@ -29,7 +29,7 @@ npx @sharmaz/mk-app
 ```
 
 <p>
-<img src="https://raw.githubusercontent.com/Sharmaz/mk-app/main/media/mk-app-prompt.gif"  width="600"  alt="mk-app prompt"/>
+<img src="https://raw.githubusercontent.com/Sharmaz/mk-app/main/media/mk-app-prompt.gif"  width="100%"  alt="mk-app prompt"/>
 </p>
 
 ## CLI Options
@@ -56,7 +56,7 @@ mk-app --template react-ts my-app
 ```
 
 <p>
-<img src="https://raw.githubusercontent.com/Sharmaz/mk-app/main/media/mk-app-options.gif"  width="600"  alt="mk-app options"/>
+<img src="https://raw.githubusercontent.com/Sharmaz/mk-app/main/media/mk-app-options.gif"  width="100%"  alt="mk-app options"/>
 </p>
 
 ### Template List
