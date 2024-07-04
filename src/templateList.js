@@ -34,7 +34,7 @@ const templates = [
   {
     value: 'react-next',
     title:  colors.error('React Experimental'),
-    description: colors.error('React 19 + Vite + Oxlint.'),
+    description: colors.error('React 19 + Farm + Oxlint.'),
   }
 ];
 
