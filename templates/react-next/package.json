@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "farm start",
+    "start": "farm start",
+    "build": "farm build",
+    "preview": "farm preview",
+    "clean": "farm clean",
     "lint": "oxlint -c oxlintrc.json ./src"
   },
   "dependencies": {
@@ -14,10 +16,13 @@
     "react-dom": "^19.0.0-rc-100dfd7dab-20240701"
   },
   "devDependencies": {
+    "@farmfe/cli": "^1.0.2",
+    "@farmfe/core": "^1.2.4",
+    "@farmfe/plugin-react": "^1.1.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.0",
+    "core-js": "^3.36.1",
     "oxlint": "^0.5.1",
-    "vite": "^5.2.12"
+    "react-refresh": "^0.14.0"
   }
 }
