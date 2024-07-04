@@ -1,5 +1,5 @@
-import { expect, test } from "@jest/globals";
-import { formatAppName, validateAppName } from "../src/utils/appName";
+import { expect, test } from '@jest/globals';
+import { formatAppName, validateAppName } from '../../src/utils/appName';
 
 const appNameMock = 'vanilla-test-app';
 const wrongFormatSpaces = 'vanilla test app';

@@ -8,8 +8,10 @@
     "lint": "eslint .",
     "build": "rollup --config",
     "cov:clean": "rimraf .nyc_output && rimraf coverage",
-    "cov": "NODE_OPTIONS=--experimental-vm-modules jest --forceExit --colors --detectOpenHandles -c jest.config.js",
-    "test": "npm-run-all cov:clean cov"
+    "cov:unit": "NODE_OPTIONS=--experimental-vm-modules jest --forceExit --colors --detectOpenHandles -c jest.config.unit.js",
+    "test:unit": "npm-run-all cov:clean cov:unit",
+    "cov:e2e": "NODE_ENV=e2e NODE_OPTIONS=--experimental-vm-modules jest --forceExit --colors --detectOpenHandles --runInBand -c jest.config.e2e.js",
+    "test:e2e": "NODE_ENV=e2e npm-run-all cov:clean cov:e2e"
   },
   "repository": {
     "type": "git",
