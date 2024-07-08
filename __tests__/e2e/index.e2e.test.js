@@ -40,4 +40,9 @@ describe('Passing arguments to main app', () => {
     const { stdout } = await execa`node index.js --template no-template ${appNameMock}`;
     expect(stdout).toContain('Invalid Template');
   });
+
+  test('Passing args -t', async () => {
+    const { stdout } = await execa`node index.js --t minimal-react ${appNameMock}`;
+    expect(stdout).toContain('Finished creating directory');
+  });
 });

@@ -14,7 +14,7 @@ import helpMessage from './utils/helpMessage';
 const argsv = minimist(argv.slice(2));
 
 const app = async (args) => {
-  const templateArg = args.template;
+  const templateArg = args.template || args.t;
   const appNameArg = args._[0];
   const { help, h } = args;
 
@@ -58,7 +58,7 @@ const app = async (args) => {
     }
   } else {
     try {
-      const template = templateArg
+      const template = templateArg;
       const appName = appNameArg;
       const targetDirectory = path.join(process.cwd(), appName);
       const sourceDir = path.resolve(
