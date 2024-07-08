@@ -22,7 +22,7 @@ const templates = [
     description: colors.error('React + Vite + Tailwindcss.'),
   },
   {
-    value: 'react-tw-lint-test',
+    value: 'react-dev',
     title:  colors.react('React Tailwind CSS, Linter and Testing'),
     description: colors.error('React + Vite + Tailwind CSS + ESlint 8 + ESlint Airbnb + Jest + React Testing Library.'),
   },
@@ -32,7 +32,7 @@ const templates = [
     description: colors.error('React + Vite + TypeScript + ESlint 8.'),
   },
   {
-    value: 'react-ts-tw-lint-test',
+    value: 'react-dev-ts',
     title:  colors.typescript('React TypeScript, Tailwind CSS, Linter and Testing'),
     description: colors.error('React + Vite + TypeScript + Tailwind CSS + ESlint 8 + Jest + React Testing Library.'),
   },
