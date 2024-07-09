@@ -7,7 +7,8 @@ const colors = {
   ok: chalk.hex('30ED86'),
   error: chalk.hex('ED3066'),
   info: chalk.hex('42ECDE'),
-  warn: chalk.hex('#EC9942')
+  warn: chalk.hex('#EC9942'),
+  webpack: chalk.hex('#75AFCC')
 };
 
 export default colors;
