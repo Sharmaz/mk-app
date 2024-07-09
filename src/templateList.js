@@ -12,19 +12,24 @@ const templates = [
     description: colors.error('React + Vite.'),
   },
   {
-    value: 'minimal-react-wp',
-    title: colors.react('Minimal React Webpack'),
-    description: colors.error('React + Webpack.')
-  },
-  {
     value: 'react-tw',
     title:  colors.react('React Tailwind CSS'),
     description: colors.error('React + Vite + Tailwindcss.'),
   },
   {
     value: 'react-dev',
-    title:  colors.react('React Tailwind CSS, Linter and Testing'),
+    title:  colors.react('React Dev'),
     description: colors.error('React + Vite + Tailwind CSS + ESlint 8 + ESlint Airbnb + Jest + React Testing Library.'),
+  },
+  {
+    value: 'minimal-react-wp',
+    title: colors.webpack('Minimal React Webpack'),
+    description: colors.error('React + Webpack.')
+  },
+  {
+    value: 'react-dev-webpack',
+    title: colors.webpack('React Dev Webpack'),
+    description: colors.error('React + Webpack + Tailwind CSS + ESlint 8 + Jest + React Testing Library.')
   },
   {
     value: 'react-ts',
@@ -33,7 +38,7 @@ const templates = [
   },
   {
     value: 'react-dev-ts',
-    title:  colors.typescript('React TypeScript, Tailwind CSS, Linter and Testing'),
+    title:  colors.typescript('React Dev Typescript'),
     description: colors.error('React + Vite + TypeScript + Tailwind CSS + ESlint 8 + Jest + React Testing Library.'),
   },
   {
