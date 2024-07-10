@@ -64,9 +64,10 @@ mk-app --template react-ts my-app
 | :------- | :---------- |
 | **vanilla-js**            | Vanilla JS + Vite. |
 | **minimal-react**         | React + Vite. |
-| **minimal-react-wp**      | React + Webpack. |
 | **react-tw**              | React + Vite + Tailwind CSS. |
-| **react-dev**             | React + Vite + Tailwind CSS + ESlint 8 + React Testing Library |
+| **react-dev**             | React + Vite + Tailwind CSS + ESlint 8 + React Testing Library. |
+| **minimal-react-wp**      | React + Webpack. |
+| **react-dev-webpack**     | React + Webpack + Tailwind CSS + ESlint 8 + React Testing Library. |
 | **react-ts**              | React + Vite + TypeScript + ESlint 8. |
-| **react-dev-ts**          | React + Typescript + Vite + Tailwind CSS + ESlint 8 + React Testing Library |
+| **react-dev-ts**          | React + Typescript + Vite + Tailwind CSS + ESlint 8 + React Testing Library. |
 | **react-next**            | React 19 + Farm + Oxlint. |

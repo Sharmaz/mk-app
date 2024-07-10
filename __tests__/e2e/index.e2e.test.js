@@ -45,4 +45,14 @@ describe('Passing arguments to main app', () => {
     const { stdout } = await execa`node index.js --t minimal-react ${appNameMock}`;
     expect(stdout).toContain('Finished creating directory');
   });
+
+  test('Passing --help', async () => {
+    const { stdout } = await execa`node index.js --help`;
+    expect(stdout).toContain('Usage: mk-app [OPTION]... [DIRECTORY]');
+  });
+
+  test('Passing -h', async () => {
+    const { stdout } = await execa`node index.js -h`;
+    expect(stdout).toContain('Usage: mk-app [OPTION]... [DIRECTORY]');
+  });
 });
