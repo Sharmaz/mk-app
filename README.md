@@ -71,3 +71,4 @@ mk-app --template react-ts my-app
 | **react-ts**              | React + Vite + TypeScript + ESlint 8. |
 | **react-dev-ts**          | React + Typescript + Vite + Tailwind CSS + ESlint 8 + React Testing Library. |
 | **react-next**            | React 19 + Farm + Oxlint. |
+| **vue-js**                   | Vue + Vite. |
