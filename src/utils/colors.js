@@ -7,6 +7,7 @@ const colors = {
   ok: chalk.hex('30ED86'),
   error: chalk.hex('ED3066'),
   info: chalk.hex('42ECDE'),
+  vue: chalk.hex('54E6A5'),
   warn: chalk.hex('#EC9942'),
   webpack: chalk.hex('#75AFCC')
 };
