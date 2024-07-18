@@ -45,6 +45,11 @@ const templates = [
     value: 'react-next',
     title:  colors.error('React Experimental'),
     description: colors.error('React 19 + Farm + Oxlint.'),
+  },
+  {
+    value: 'vue-js',
+    title:  colors.vue('Vue'),
+    description: colors.error('Vue + Vite'),
   }
 ];
 
