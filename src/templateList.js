@@ -50,6 +50,10 @@ const templates = [
     value: 'vue-js',
     title:  colors.vue('Vue'),
     description: colors.error('Vue + Vite'),
+  }, {
+    value: 'node-express',
+    title:  colors.node('Node Express'),
+    description: colors.error('Node + Express + Jest + Eslint.'),
   }
 ];
 

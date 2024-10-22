@@ -9,7 +9,8 @@ const colors = {
   info: chalk.hex('42ECDE'),
   vue: chalk.hex('54E6A5'),
   warn: chalk.hex('#EC9942'),
-  webpack: chalk.hex('#75AFCC')
+  webpack: chalk.hex('#75AFCC'),
+  node: chalk.hex('#417E38'),
 };
 
 export default colors;
