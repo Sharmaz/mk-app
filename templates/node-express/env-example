@@ -1,0 +1,8 @@
+PORT=3000
+DB_HOST='localhost'
+DB_USER=''
+DB_PASS=''
+DB_NAME=''
+DB_PORT=5432
+API_KEY=''
+JWT_SECRET=''

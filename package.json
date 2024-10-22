@@ -1,6 +1,6 @@
 {
   "name": "@sharmaz/mk-app",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "type": "module",
   "description": "A quick way to start your web applications.",
   "main": "index.js",
@@ -32,7 +32,9 @@
     "jest",
     "react testing library",
     "app",
-    "web"
+    "web",
+    "node",
+    "express"
   ],
   "bin": {
     "mk-app": "index.js"
