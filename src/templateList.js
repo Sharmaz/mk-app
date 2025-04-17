@@ -34,7 +34,7 @@ const templates = [
   {
     value: 'react-ts',
     title:  colors.typescript('React TypeScript'),
-    description: colors.error('React + Vite + TypeScript + ESlint 8.'),
+    description: colors.error('React + Vite + TypeScript + ESlint.'),
   },
   {
     value: 'react-dev-ts',
