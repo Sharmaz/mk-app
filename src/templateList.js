@@ -29,7 +29,7 @@ const templates = [
   {
     value: 'react-dev-webpack',
     title: colors.webpack('React Dev Webpack'),
-    description: colors.error('React + Webpack + Tailwind CSS + ESlint 8 + Jest + React Testing Library.')
+    description: colors.error('React + Webpack + Tailwind CSS + ESlint + Jest + React Testing Library.')
   },
   {
     value: 'react-ts',
