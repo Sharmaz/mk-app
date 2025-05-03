@@ -19,7 +19,7 @@ const templates = [
   {
     value: 'react-dev',
     title:  colors.react('React Dev'),
-    description: colors.error('React + Vite + Tailwind CSS + ESlint 8 + ESlint Airbnb + Jest + React Testing Library.'),
+    description: colors.error('React + Vite + Tailwind CSS + ESlint 8 + Jest + React Testing Library.'),
   },
   {
     value: 'minimal-react-wp',
