@@ -39,7 +39,7 @@ const templates = [
   {
     value: 'react-dev-ts',
     title:  colors.typescript('React Dev Typescript'),
-    description: colors.error('React + Vite + TypeScript + Tailwind CSS + ESlint 8 + Jest + React Testing Library.'),
+    description: colors.error('React + Vite + TypeScript + Tailwind CSS + ESlint + Jest + React Testing Library.'),
   },
   {
     value: 'react-next',
