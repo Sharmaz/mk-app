@@ -19,7 +19,7 @@ const templates = [
   {
     value: 'react-dev',
     title:  colors.react('React Dev'),
-    description: colors.error('React + Vite + Tailwind CSS + ESlint 8 + ESlint Airbnb + Jest + React Testing Library.'),
+    description: colors.error('React + Vite + Tailwind CSS + ESlint 8 + Jest + React Testing Library.'),
   },
   {
     value: 'minimal-react-wp',
@@ -29,20 +29,20 @@ const templates = [
   {
     value: 'react-dev-webpack',
     title: colors.webpack('React Dev Webpack'),
-    description: colors.error('React + Webpack + Tailwind CSS + ESlint 8 + Jest + React Testing Library.')
+    description: colors.error('React + Webpack + Tailwind CSS + ESlint + Jest + React Testing Library.')
   },
   {
     value: 'react-ts',
     title:  colors.typescript('React TypeScript'),
-    description: colors.error('React + Vite + TypeScript + ESlint 8.'),
+    description: colors.error('React + Vite + TypeScript + ESlint.'),
   },
   {
     value: 'react-dev-ts',
     title:  colors.typescript('React Dev Typescript'),
-    description: colors.error('React + Vite + TypeScript + Tailwind CSS + ESlint 8 + Jest + React Testing Library.'),
+    description: colors.error('React + Vite + TypeScript + Tailwind CSS + ESlint + Jest + React Testing Library.'),
   },
   {
-    value: 'react-next',
+    value: 'react-ex',
     title:  colors.error('React Experimental'),
     description: colors.error('React 19 + Farm + Oxlint.'),
   },
