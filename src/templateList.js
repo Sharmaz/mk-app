@@ -42,7 +42,7 @@ const templates = [
     description: colors.error('React + Vite + TypeScript + Tailwind CSS + ESlint + Jest + React Testing Library.'),
   },
   {
-    value: 'react-next',
+    value: 'react-ex',
     title:  colors.error('React Experimental'),
     description: colors.error('React 19 + Farm + Oxlint.'),
   },

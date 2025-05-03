@@ -70,6 +70,6 @@ mk-app --template react-ts my-app
 | **react-dev-webpack**     | React + Webpack + Tailwind CSS + ESlint + React Testing Library. |
 | **react-ts**              | React + Vite + TypeScript + ESlint. |
 | **react-dev-ts**          | React + Typescript + Vite + Tailwind CSS + ESlint + React Testing Library. |
-| **react-next**            | React 19 + Farm + Oxlint. |
+| **react-experimental**            | React 19 + Farm + Oxlint. |
 | **vue-js**                | Vue + Vite. |
 | **node-express**          | NodeJS + Express + ESlint + Jest + Sequelize |
