@@ -11,6 +11,8 @@ const colors = {
   warn: chalk.hex('#EC9942'),
   webpack: chalk.hex('#75AFCC'),
   node: chalk.hex('#417E38'),
+  rust: chalk.hex('#D34516'),
+  experimental: chalk.hex('#FA2200'),
 };
 
 export default colors;
