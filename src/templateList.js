@@ -13,13 +13,13 @@ const templateCategories = {
     'React JavaScript': [
       {
         value: 'react',
-        title: setColor('React Vite'),
+        title: setColor('React'),
         description: colors.error('React + Vite.'),
       },
       {
         value: 'react-dev',
         title:  setColor('React Dev'),
-        description: colors.error('React + Vite + Tailwind CSS + ESlint + Jest + React Testing Library.'),
+        description: colors.error('Tailwind + Linter + Tests'),
       },
       {
         value: 'react-webpack',
@@ -29,19 +29,19 @@ const templateCategories = {
       {
         value: 'react-dev-webpack',
         title: setColor('React Dev Webpack'),
-        description: colors.error('React + Webpack + Tailwind CSS + ESlint + Jest + React Testing Library.')
+        description: colors.error('Tailwind + Linter + Tests')
       },
     ],
     'React TypeScript': [
       {
-        value: 'react-ts',
+        value: 'react-typescript',
         title:  setColor('React TypeScript'),
-        description: colors.error('React + Vite + TypeScript + ESlint.'),
+        description: colors.error('React + Vite + TypeScript'),
       },
       {
-        value: 'react-dev-ts',
+        value: 'react-dev-typescript',
         title:  setColor('React Dev TypeScript'),
-        description: colors.error('React + Vite + TypeScript + Tailwind CSS + ESlint + Jest + React Testing Library.'),
+        description: colors.error('Tailwind + Linter + Tests'),
       },
     ]
   },
