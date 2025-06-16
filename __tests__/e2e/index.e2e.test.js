@@ -8,30 +8,46 @@ beforeAll(() => rm(genPath, { recursive: true, force: true }));
 afterEach(() => rm(genPath, { recursive: true, force: true }));
 
 describe('prompt messages', () => {
-  test('prompt initial selection', async () => {
+  test('prompt select type of project', async () => {
     const { exitCode, stdout } = await runTest([mainPath], []);
 
     expect(exitCode).toBe(0);
-    expect(stdout).toContain('Select your setup');
+    expect(stdout).toContain('Select the type of project');
   });
-  test('prompt template input app name', async () => {
+  test('prompt select the technology for the project', async () => {
     const { exitCode, stdout } = await runTest([mainPath], [ENTER]);
+
+    expect(exitCode).toBe(0);
+    expect(stdout).toMatch(/Select the technology for.*/gm);
+  });
+  test('prompt select the template of the project', async () => {
+    const { exitCode, stdout } = await runTest([mainPath], [ENTER, ENTER]);
+
+    expect(exitCode).toBe(0);
+    expect(stdout).toMatch(/Select the template for.*/gm);
+  });
+
+  test('prompt introduce the app name', async () => {
+    const { exitCode, stdout } = await runTest([mainPath], [ENTER, ENTER, ENTER]);
 
     expect(exitCode).toBe(0);
     expect(stdout).toContain('Enter your app name');
   });
+
   test('prompt app created', async () => {
-    const { exitCode, stdout } = await runTest([mainPath], [ENTER, appNameMock, ENTER]);
+    const { exitCode, stdout } = await runTest([mainPath], [ENTER, ENTER, ENTER, appNameMock, ENTER]);
 
     expect(exitCode).toBe(0);
     expect(stdout).toContain('Finished creating directory');
   });
 
   test('prompt not avaliable directory', async () => {
-    await runTest([mainPath], [ENTER, appNameMock, ENTER]);
-    const { exitCode, stdout } = await runTest([mainPath], [ENTER, appNameMock, ENTER]);
-    expect(exitCode).toBe(0);
-    expect(stdout).toContain('Target directory already exist!');
+    await runTest([mainPath], [ENTER, ENTER, ENTER, appNameMock, ENTER]);
+    (async () => {
+      const { exitCode, stdout } = await runTest([mainPath], [ENTER, ENTER, ENTER, appNameMock, ENTER]);
+      expect(exitCode).toBe(0);
+      expect(stdout).toContain('Target directory already exist!');
+    })();
   });
 });
 
@@ -42,7 +58,7 @@ describe('Passing arguments to main app', () => {
   });
 
   test('Passing args -t', async () => {
-    const { stdout } = await execa`node index.js --t minimal-react ${appNameMock}`;
+    const { stdout } = await execa`node index.js --t react ${appNameMock}`;
     expect(stdout).toContain('Finished creating directory');
   });
 
