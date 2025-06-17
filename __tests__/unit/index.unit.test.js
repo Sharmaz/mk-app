@@ -11,7 +11,7 @@ afterEach(() => rm(genPath, { recursive: true, force: true }));
 
 describe('Passing arguments to main app', () => {
   test('Passing template and directory', () => {
-    const args = { _: [ appNameMock ], template: 'react-tw' };
+    const args = { _: [ appNameMock ], template: 'react' };
     app(args);
 
     const packageJson = readFileSync(`${genPath}/package.json`, 'utf8');
@@ -19,7 +19,7 @@ describe('Passing arguments to main app', () => {
   });
 
   test('Passing template without directory', () => {
-    const args = { _: [], template: 'react-tw' };
+    const args = { _: [], template: 'react' };
     app(args);
 
     let packageJson;
