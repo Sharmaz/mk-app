@@ -1,7 +1,7 @@
 import { existsSync, mkdirSync } from 'fs';
 import copyFilesAndDirectories from './templateCopy';
 import renamePackageJsonName from './templateRenameName';
-import colors from './utils/colors';
+import { colors } from './utils/colors';
 
 async function initialize(sourcePath, destinationPath, name) {
   const isValidTemplate = existsSync(sourcePath);
