@@ -1,5 +1,5 @@
 const helpMessage = `
-Usage: mk-app [OPTION]... [DIRECTORY]
+Usage: create-enchilada [OPTION]... [DIRECTORY]
 
 Create a new app. With no arguments,
 starting the CLI in interactive mode.
