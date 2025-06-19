@@ -42,7 +42,7 @@ const templateCategories = {
     'NodeJS': [
       {
         value: 'node-express',
-        title:  `${setColor('Node Express')}${separator('Node Express')}${setUnderlineOff(colors.error('Express + Linter + Tests'))}`,
+        title:  `${setColor('Node Express')}${separator('Node Express')}${setUnderlineOff(colors.error('Express + Sequelize + Linter + Tests'))}`,
       },
     ]
   }
