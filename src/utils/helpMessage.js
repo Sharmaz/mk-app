@@ -12,15 +12,13 @@ Options:
   -h, --help                Display a help message, and exit.
 
 Available templates:
-  vanilla-js                Vanilla JS + Vite.
-  minimal-react             React + Vite.
-  react-tw                  React + Vite + Tailwind CSS.
-  react-dev                 React + Vite + Tailwind CSS + ESlint 8 + React Testing Library.
-  minimal-react-wp          React + Webpack.
-  react-dev-webpack         React + Webpack + Tailwind CSS + ESlint 8 + React Testing Library
-  react-ts                  React + Vite + TypeScript + ESlint 8.
-  react-dev-ts              React + Typescript + Vite + Tailwind CSS + ESlint 8 + React Testing Library.
-  react-next                React 19 + Farm + Oxlint.
-  vue-js                    Vue + Vite
+  vanilla-js                Vanilla JS + Vite
+  react                     React + Vite.
+  react-dev                 Tailwind + Linter + Tests
+  react-webpack             React + Webpack.
+  react-dev-webpack         Tailwind + Linter + Tests
+  react-typescript          React + Vite + TypeScript
+  react-dev-typescript      Tailwind + Linter + Tests
+  node-express              Express + Sequelize + Linter + Tests
 `;
 export default helpMessage;

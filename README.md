@@ -62,15 +62,11 @@ mk-app --template react-ts my-app
 ### Template List
 | TEMPLATE | DESCRIPTION |
 | :------- | :---------- |
-| **vanilla-js**            | Vanilla JS + Vite. |
-| **minimal-react**         | React + Vite. |
-| **minimal-react-wp**      | React + Webpack. |
-| **react-tw**              | React + Vite + Tailwind CSS. |
-| **react-ts**              | React + Vite + TypeScript + ESlint. |
-| **react-experimental**    | React 19 + Farm + Oxlint. |
-| **react-dev**             | React + Vite + Tailwind CSS + ESlint + React Testing Library. |
-| **react-dev-ts**          | React + Typescript + Vite + Tailwind CSS + ESlint + React Testing Library. |
-| **react-dev-rolldown**    | React + Vite + Rolldown Tailwind CSS + ESlint + React Testing Library. |
-| **react-dev-webpack**     | React + Webpack + Tailwind CSS + ESlint + React Testing Library. |
-| **vue-js**                | Vue + Vite. |
-| **node-express**          | NodeJS + Express + ESlint + Jest + Sequelize |
+| **vanilla-js**            | Vanilla JS + Vite |
+| **react**                 | React + Vite |
+| **react-webpack**         | React + Webpack |
+| **react-typescript**      | React + Vite + TypeScript + ESlint |
+| **react-dev**             | React + Vite + Tailwind CSS + ESlint + React Testing Library |
+| **react-dev-typescript**  | React + Typescript + Vite + Tailwind CSS + ESlint + React Testing Library |
+| **react-dev-webpack**     | React + Webpack + Tailwind CSS + ESlint + React Testing Library |
+| **node-express**          | NodeJS + Express + Sequelize + ESlint + Jest |
