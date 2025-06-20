@@ -1,10 +1,9 @@
 <div align="center">
 <p>
-<img src="https://raw.githubusercontent.com/Sharmaz/enchilada/main/media/enchilada-js-logo.svg" width="500" alt="enchiladajs logo"/>
+<img src="https://raw.githubusercontent.com/Sharmaz/enchilada/refs/heads/chore/rebranding/media/enchilada-js-logo.svg" width="250" alt="enchiladajs logo"/>
 </p>
-<p>
-Building apps with JavaScript — as if they were enchiladas!
-</p>
+
+# Building apps with JavaScript — as if they were enchiladas!
 </div>
 
 <p align="center">
@@ -29,9 +28,9 @@ pnpm create enchilada
 yarn create enchilada
 ```
 
-<p>
+<p style="margin: 0">
 <video style="width: 100%;" controls>
-  <source src="https://raw.githubusercontent.com/Sharmaz/enchilada/media/enchiladajs.mp4" type="video/mp4">
+  <source src="https://github.com/Sharmaz/enchilada/raw/refs/heads/chore/rebranding/media/enchiladajs.mp4" type="video/mp4"> 
 </video>
 </p>
 
