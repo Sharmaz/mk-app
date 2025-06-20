@@ -28,11 +28,11 @@ pnpm create enchilada
 yarn create enchilada
 ```
 
-<p style="margin: 0">
+![](https://github.com/Sharmaz/enchilada/raw/refs/heads/chore/rebranding/media/enchiladajs.mp4)
+
 <video style="width: 100%;" controls>
   <source src="https://github.com/Sharmaz/enchilada/raw/refs/heads/chore/rebranding/media/enchiladajs.mp4" type="video/mp4"> 
 </video>
-</p>
 
 ## CLI Options
 ### Help:
