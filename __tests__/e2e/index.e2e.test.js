@@ -64,11 +64,11 @@ describe('Passing arguments to main app', () => {
 
   test('Passing --help', async () => {
     const { stdout } = await execa`node index.js --help`;
-    expect(stdout).toContain('Usage: mk-app [OPTION]... [DIRECTORY]');
+    expect(stdout).toContain('Usage: create-enchilada [OPTION]... [DIRECTORY]');
   });
 
   test('Passing -h', async () => {
     const { stdout } = await execa`node index.js -h`;
-    expect(stdout).toContain('Usage: mk-app [OPTION]... [DIRECTORY]');
+    expect(stdout).toContain('Usage: create-enchilada [OPTION]... [DIRECTORY]');
   });
 });

@@ -35,7 +35,7 @@ describe('Passing arguments to main app', () => {
     const args = { _: [], help: true };
     const result = await app(args);
 
-    expect(result).toContain('Usage: mk-app [OPTION]... [DIRECTORY]');
+    expect(result).toContain('Usage: create-enchilada [OPTION]... [DIRECTORY]');
   });
 
   test('Passing a invalid template', async () => {

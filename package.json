@@ -1,6 +1,6 @@
 {
-  "name": "@sharmaz/mk-app",
-  "version": "0.3.0",
+  "name": "create-enchilada",
+  "version": "1.0.0",
   "type": "module",
   "description": "A quick way to start your web applications.",
   "main": "index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sharmaz/mk-app.git"
+    "url": "git+https://github.com/Sharmaz/enchilada.git"
   },
   "keywords": [
     "cli",
@@ -37,7 +37,7 @@
     "express"
   ],
   "bin": {
-    "mk-app": "index.js"
+    "create-enchilada": "index.js"
   },
   "preferGlobal": true,
   "engines": {
@@ -51,9 +51,9 @@
   "author": "Ivan Robles <contact@ivanrobles.pro>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Sharmaz/mk-app/issues"
+    "url": "https://github.com/Sharmaz/enchilada/issues"
   },
-  "homepage": "https://github.com/Sharmaz/mk-app#readme",
+  "homepage": "https://github.com/Sharmaz/enchilada#readme",
   "devDependencies": {
     "@jest/globals": "^29.7.0",
     "@rollup/plugin-commonjs": "^26.0.1",
