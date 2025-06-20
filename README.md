@@ -29,6 +29,12 @@ pnpm create enchilada
 yarn create enchilada
 ```
 
+<p>
+<video style="width: 100%;" controls>
+  <source src="https://raw.githubusercontent.com/Sharmaz/enchilada/media/enchiladajs.mp4" type="video/mp4">
+</video>
+</p>
+
 ## CLI Options
 ### Help:
 ```
